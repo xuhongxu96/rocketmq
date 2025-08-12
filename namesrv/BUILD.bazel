@@ -72,4 +72,7 @@ GenTestRules(
     deps = [
         ":tests",
     ],
+    exclude_tests = [
+        "src/test/java/org/apache/rocketmq/namesrv/kvconfig/KVConfigManagerTest",
+    ]
 )

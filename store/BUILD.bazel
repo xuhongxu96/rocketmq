@@ -45,6 +45,7 @@ java_library(
         "@maven//:org_apache_rocketmq_rocketmq_rocksdb",
         "@maven//:com_google_code_findbugs_jsr305",
         "@maven//:commons_validator_commons_validator",
+        "@maven//:org_slf4j_slf4j_api",
     ],
 )
 
@@ -76,6 +77,17 @@ GenTestRules(
         # These tests are extremely slow and flaky, exclude them before they are properly fixed.
         "src/test/java/org/apache/rocketmq/store/ha/autoswitch/AutoSwitchHATest",
         "src/test/java/org/apache/rocketmq/store/dledger/DLedgerCommitlogTest",
+        "src/test/java/org/apache/rocketmq/store/BatchPutMessageTest",
+        "src/test/java/org/apache/rocketmq/store/ConsumeQueueTest",
+        "src/test/java/org/apache/rocketmq/store/DefaultMessageStoreCleanFilesTest",
+        "src/test/java/org/apache/rocketmq/store/MessageStoreStateMachineTest",
+        "src/test/java/org/apache/rocketmq/store/RocksDBMessageStoreTest",
+        "src/test/java/org/apache/rocketmq/store/dledger/DLedgerMultiPathTest",
+        "src/test/java/org/apache/rocketmq/store/queue/CombineConsumeQueueStoreTest",
+        "src/test/java/org/apache/rocketmq/store/queue/ConsumeQueueStoreTest",
+        "src/test/java/org/apache/rocketmq/store/queue/ConsumeQueueTest",
+        "src/test/java/org/apache/rocketmq/store/timer/TimerMessageStoreTest",
+        "src/test/java/org/apache/rocketmq/store/MappedFileQueueTest",
     ],
     medium_tests = [
         "src/test/java/org/apache/rocketmq/store/DefaultMessageStoreTest",

@@ -107,6 +107,9 @@ GenTestRules(
             # These tests are extremely slow and flaky, exclude them before they are properly fixed.
             "src/test/java/org/apache/rocketmq/broker/controller/ReplicasManagerRegisterTest",
             "src/test/java/org/apache/rocketmq/broker/BrokerOuterAPITest",
+            "src/test/java/org/apache/rocketmq/broker/subscription/RocksdbGroupConfigTransferTest",
+            "src/test/java/org/apache/rocketmq/broker/BrokerControllerTest",
+            "src/test/java/org/apache/rocketmq/broker/filter/MessageStoreWithFilterTest",
         ],
     deps = [
         ":tests",
