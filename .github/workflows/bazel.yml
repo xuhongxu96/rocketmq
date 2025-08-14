@@ -1,13 +1,5 @@
 name: Build and Run Tests by Bazel
-on:
-  pull_request:
-    types: [opened, reopened, synchronize]
-  push:
-    branches:
-      - master
-      - develop
-      - bazel
-
+on: workflow_dispatch
 jobs:
   build:
     name: "bazel-compile (${{ matrix.os }})"
