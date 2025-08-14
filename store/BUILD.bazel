@@ -86,6 +86,7 @@ GenTestRules(
         "src/test/java/org/apache/rocketmq/store/queue/BatchConsumeMessageTest",
         "src/test/java/org/apache/rocketmq/store/dledger/MixCommitlogTest",
         "src/test/java/org/apache/rocketmq/store/RocksDBMessageStoreTest",
+        "src/test/java/org/apache/rocketmq/store/timer/TimerMessageStoreTest",
     ],
     test_files = glob(["src/test/java/**/*Test.java"]),
     deps = [
